@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cơ Sở In Đức Tiến – Thiệp Cưới, Logo, Phù Hiệu, In PET</title>
+<meta property="og:title" content="Cơ Sở In Đức Tiến – Thiệp Cưới, Logo, Phù Hiệu, In PET">
+<meta property="og:description" content="Xem bảng mẫu sản phẩm in ấn chất lượng cao tại Đức Tiến">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#0D1B2A; --navy2:#1a2d42; --gold:#D4A843; --gold2:#e8c86a;
+  --warm:#FAF7F2; --gray:#f0ebe2; --dark:#1a1208; --mid:#4a3f2f;
+  --light:#8a7a66; --r:12px; --t:all .32s cubic-bezier(.4,0,.2,1);
+  --sh:0 4px 24px rgba(13,27,42,.10); --sh2:0 12px 40px rgba(13,27,42,.18);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',sans-serif;background:var(--warm);color:var(--dark);overflow-x:hidden}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:900;background:rgba(13,27,42,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,168,67,.3);padding:0 20px}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px;gap:8px}
+.nav-brand{font-family:'Playfair Display',serif;color:var(--gold);font-size:.95rem;font-weight:700;letter-spacing:.05em;white-space:nowrap}
+.nav-links{display:flex;gap:3px;list-style:none;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.76rem;font-weight:500;padding:5px 9px;border-radius:6px;transition:var(--t);white-space:nowrap}
+.nav-links a:hover{color:var(--gold);background:rgba(212,168,67,.12)}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;font-weight:700!important}
+.nav-cta:hover{background:var(--gold2)!important}
+@media(max-width:600px){.nav-links{display:none}}
+
+/* HERO */
+.hero{background:var(--navy);padding:76px 24px 64px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 40%,rgba(212,168,67,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 60%,rgba(212,168,67,.06) 0%,transparent 60%)}
+.hero-content{position:relative;z-index:2;max-width:680px;margin:0 auto;animation:heroUp .9s ease both}
+@keyframes heroUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{display:inline-block;border:1px solid rgba(212,168,67,.5);color:var(--gold);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:22px;font-weight:500}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.3rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:8px}
+.hero h1 span{color:var(--gold)}
+.divider-line{width:70px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto}
+.hero-tagline{color:rgba(255,255,255,.65);font-size:.95rem;font-weight:300;letter-spacing:.07em;margin-bottom:30px;font-style:italic}
+.hero-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-gold{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:.88rem;padding:11px 26px;border-radius:40px;text-decoration:none;transition:var(--t);box-shadow:0 4px 20px rgba(212,168,67,.35)}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:7px;border:1.5px solid rgba(212,168,67,.6);color:var(--gold);font-family:'Be Vietnam Pro',sans-serif;font-weight:500;font-size:.88rem;padding:11px 22px;border-radius:40px;text-decoration:none;transition:var(--t)}
+.btn-outline:hover{background:rgba(212,168,67,.1);transform:translateY(-2px)}
+
+/* SECTIONS */
+.section-wrap{max-width:1100px;margin:0 auto;padding:60px 24px;opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.section-wrap.visible{opacity:1;transform:translateY(0)}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:.73rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.section-label::before{content:'';display:block;width:26px;height:2px;background:var(--gold);border-radius:2px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.45rem,3.5vw,2rem);font-weight:700;color:var(--navy);margin-bottom:8px}
+.section-desc{color:var(--light);font-size:.9rem;line-height:1.7;max-width:480px;font-weight:300}
+.section-header{margin-bottom:32px}
+.sep{height:1px;background:linear-gradient(90deg,transparent,rgba(212,168,67,.22),transparent);margin:0 24px}
+
+/* GRID */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:768px){.product-grid{grid-template-columns:repeat(2,1fr);gap:13px}}
+@media(max-width:480px){.product-grid{grid-template-columns:1fr}}
+
+/* CARD */
+.product-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:var(--t);cursor:pointer;border:1px solid rgba(212,168,67,.13);position:relative}
+.product-card:hover{box-shadow:var(--sh2);transform:translateY(-4px) scale(1.01);border-color:rgba(212,168,67,.35)}
+.card-img-wrap{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--gray)}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
+.product-card:hover .card-img-wrap img{transform:scale(1.06)}
+.card-overlay{position:absolute;inset:0;background:rgba(13,27,42,.65);display:flex;align-items:center;justify-content:center;opacity:0;transition:var(--t)}
+.product-card:hover .card-overlay{opacity:1}
+.overlay-text{color:var(--gold);font-size:.82rem;font-weight:500;letter-spacing:.1em;border:1.5px solid rgba(212,168,67,.7);padding:7px 18px;border-radius:20px}
+.card-badge{position:absolute;top:9px;left:9px;background:rgba(13,27,42,.85);color:var(--gold);font-size:.66rem;font-weight:600;letter-spacing:.1em;padding:3px 9px;border-radius:12px;text-transform:uppercase;backdrop-filter:blur(4px);border:1px solid rgba(212,168,67,.3)}
+.card-body{padding:13px 15px;border-top:1px solid rgba(212,168,67,.1)}
+.card-name{font-size:.86rem;font-weight:600;color:var(--navy);margin-bottom:2px}
+.card-sub{font-size:.73rem;color:var(--light);font-weight:300}
+.empty-card{background:#fff;border-radius:var(--r);border:2px dashed rgba(212,168,67,.3);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:rgba(212,168,67,.5);font-size:.8rem;cursor:default}
+.empty-card svg{width:36px;height:36px;opacity:.35}
+
+/* LIGHTBOX */
+.lightbox{display:none;position:fixed;inset:0;z-index:2000;background:rgba(7,14,24,.95);align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+.lightbox.open{display:flex;animation:lbIn .22s ease}
+@keyframes lbIn{from{opacity:0}to{opacity:1}}
+.lb-img-wrap{position:relative;max-width:88vw;max-height:88vh;text-align:center}
+.lb-img-wrap img{max-width:88vw;max-height:80vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 80px rgba(0,0,0,.6)}
+.lb-caption{color:rgba(255,255,255,.65);font-size:.82rem;margin-top:10px;font-style:italic}
+.lb-btn{position:fixed;background:rgba(212,168,67,.15);border:1.5px solid rgba(212,168,67,.4);color:var(--gold);border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t);font-size:1rem;backdrop-filter:blur(8px)}
+.lb-btn:hover{background:rgba(212,168,67,.3)}
+.lb-close{top:18px;right:18px}
+.lb-prev{left:14px;top:50%;transform:translateY(-50%)}
+.lb-next{right:14px;top:50%;transform:translateY(-50%)}
+
+/* CONTACT */
+.contact-section{background:var(--navy);padding:60px 24px;position:relative;overflow:hidden}
+.contact-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(212,168,67,.07) 0%,transparent 70%)}
+.contact-inner{max-width:680px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.contact-title{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,4vw,2.2rem);color:#fff;margin:8px 0 6px}
+.contact-sub{color:rgba(255,255,255,.55);font-weight:300;font-size:.9rem;margin-bottom:30px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:28px}
+@media(max-width:480px){.contact-grid{grid-template-columns:1fr}}
+.citem{background:rgba(255,255,255,.05);border:1px solid rgba(212,168,67,.2);border-radius:10px;padding:16px;text-align:left}
+.citem-icon{font-size:1.3rem;margin-bottom:7px;display:block}
+.citem-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:600;margin-bottom:3px}
+.citem-value{color:#fff;font-size:.9rem}
+.citem-value a{color:inherit;text-decoration:none}
+.citem-value a:hover{color:var(--gold)}
+.contact-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.btn-zalo{display:inline-flex;align-items:center;gap:7px;background:#0068FF;color:#fff;padding:11px 26px;border-radius:40px;font-weight:600;font-size:.86rem;text-decoration:none;transition:var(--t)}
+.btn-zalo:hover{background:#0057d6;transform:translateY(-2px)}
+.btn-fb{display:inline-flex;align-items:center;gap:7px;background:#1877F2;color:#fff;padding:11px 26px;border-radius:40px;font-weight:600;font-size:.86rem;text-decoration:none;transition:var(--t)}
+.btn-fb:hover{background:#1462c8;transform:translateY(-2px)}
+.footer-copy{color:rgba(255,255,255,.3);font-size:.75rem;margin-top:6px}
+
+/* FLOAT ZALO */
+.float-zalo{position:fixed;bottom:22px;right:22px;z-index:1500;width:54px;height:54px;background:#0068FF;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,104,255,.45);cursor:pointer;text-decoration:none;transition:var(--t);animation:pulseZ 2.5s infinite}
+.float-zalo:hover{transform:scale(1.1)}
+@keyframes pulseZ{0%,100%{box-shadow:0 6px 24px rgba(0,104,255,.45),0 0 0 0 rgba(0,104,255,.4)}50%{box-shadow:0 6px 24px rgba(0,104,255,.45),0 0 0 10px rgba(0,104,255,0)}}
+.float-zalo svg{width:26px;height:26px;fill:#fff}
+.float-tip{position:absolute;right:64px;background:var(--navy);color:#fff;font-size:.75rem;padding:5px 11px;border-radius:7px;white-space:nowrap;font-weight:500;border:1px solid rgba(212,168,67,.3);opacity:0;pointer-events:none;transition:opacity .22s}
+.float-zalo:hover .float-tip{opacity:1}
+
+/* ══════════════════════════════
+   ADMIN PANEL
+══════════════════════════════ */
+#admin-toggle{position:fixed;bottom:22px;left:22px;z-index:1500;width:46px;height:46px;background:var(--navy2);border:1.5px solid rgba(212,168,67,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t);box-shadow:0 4px 16px rgba(0,0,0,.25)}
+#admin-toggle:hover{border-color:var(--gold);background:var(--navy)}
+#admin-toggle svg{width:20px;height:20px;fill:var(--gold)}
+
+#admin-panel{position:fixed;inset:0;z-index:3000;display:none;flex-direction:column;background:#111820}
+#admin-panel.open{display:flex}
+
+.admin-topbar{background:var(--navy);border-bottom:1px solid rgba(212,168,67,.25);padding:0 20px;display:flex;align-items:center;gap:14px;height:54px;flex-shrink:0}
+.admin-topbar h2{font-family:'Playfair Display',serif;color:var(--gold);font-size:1rem;font-weight:700;flex:1}
+.admin-tabs{display:flex;gap:4px;overflow-x:auto}
+.tab-btn{background:none;border:none;color:rgba(255,255,255,.6);font-family:'Be Vietnam Pro',sans-serif;font-size:.78rem;font-weight:500;padding:7px 13px;border-radius:7px;cursor:pointer;transition:var(--t);white-space:nowrap}
+.tab-btn.active,.tab-btn:hover{background:rgba(212,168,67,.15);color:var(--gold)}
+.admin-close{background:rgba(255,255,255,.08);border:none;color:rgba(255,255,255,.7);width:34px;height:34px;border-radius:7px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:var(--t)}
+.admin-close:hover{background:rgba(255,0,0,.2);color:#fff}
+
+.admin-body{flex:1;overflow-y:auto;padding:24px 20px;max-width:900px;margin:0 auto;width:100%}
+
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* Form elements */
+.form-group{margin-bottom:18px}
+.form-label{display:block;font-size:.75rem;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.1em;margin-bottom:7px}
+.form-input{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(212,168,67,.25);border-radius:8px;color:#fff;font-family:'Be Vietnam Pro',sans-serif;font-size:.88rem;padding:10px 14px;transition:var(--t);outline:none}
+.form-input:focus{border-color:var(--gold);background:rgba(212,168,67,.07)}
+.form-input::placeholder{color:rgba(255,255,255,.3)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.form-row{grid-template-columns:1fr}}
+
+.save-btn{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);border:none;font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:.88rem;padding:10px 24px;border-radius:30px;cursor:pointer;transition:var(--t);margin-top:6px}
+.save-btn:hover{background:var(--gold2);transform:translateY(-1px)}
+.save-btn.saved{background:#22c55e;color:#fff}
+
+/* Image manager */
+.cat-tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
+.cat-tab{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.65);font-family:'Be Vietnam Pro',sans-serif;font-size:.78rem;padding:6px 14px;border-radius:20px;cursor:pointer;transition:var(--t)}
+.cat-tab.active{background:rgba(212,168,67,.2);border-color:var(--gold);color:var(--gold)}
+
+.img-manager-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.img-slot{background:rgba(255,255,255,.05);border:1px solid rgba(212,168,67,.2);border-radius:10px;overflow:hidden;position:relative}
+.img-slot-preview{aspect-ratio:4/3;background:rgba(255,255,255,.04);position:relative;overflow:hidden}
+.img-slot-preview img{width:100%;height:100%;object-fit:cover;display:block}
+.img-slot-preview.empty{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;color:rgba(255,255,255,.25);font-size:.72rem}
+.img-slot-preview.empty svg{width:28px;height:28px;opacity:.4}
+.img-slot-body{padding:10px}
+.img-slot-name{font-size:.75rem;color:rgba(255,255,255,.8);font-weight:500;margin-bottom:6px}
+.img-slot-sub{font-size:.68rem;color:rgba(255,255,255,.4);margin-bottom:8px}
+
+.upload-area{border:2px dashed rgba(212,168,67,.35);border-radius:8px;padding:12px;text-align:center;cursor:pointer;transition:var(--t);position:relative}
+.upload-area:hover{border-color:var(--gold);background:rgba(212,168,67,.06)}
+.upload-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-area-text{font-size:.72rem;color:rgba(212,168,67,.7);font-weight:500}
+.upload-url-row{display:flex;gap:6px;margin-top:6px}
+.upload-url-row input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:6px;color:#fff;font-size:.72rem;padding:6px 10px;outline:none;font-family:'Be Vietnam Pro',sans-serif}
+.upload-url-row input:focus{border-color:var(--gold)}
+.upload-url-row button{background:rgba(212,168,67,.2);border:1px solid rgba(212,168,67,.4);color:var(--gold);font-size:.7rem;padding:0 10px;border-radius:6px;cursor:pointer;white-space:nowrap;transition:var(--t)}
+.upload-url-row button:hover{background:rgba(212,168,67,.35)}
+.clear-img-btn{display:block;width:100%;background:rgba(255,0,0,.1);border:1px solid rgba(255,0,0,.2);color:#f87171;font-size:.7rem;padding:5px;border-radius:6px;cursor:pointer;margin-top:5px;transition:var(--t)}
+.clear-img-btn:hover{background:rgba(255,0,0,.2)}
+
+/* Info box */
+.info-box{background:rgba(212,168,67,.08);border:1px solid rgba(212,168,67,.25);border-radius:10px;padding:16px 18px;margin-bottom:20px;font-size:.82rem;color:rgba(255,255,255,.7);line-height:1.7}
+.info-box strong{color:var(--gold)}
+
+/* Toast */
+.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(10px);background:#22c55e;color:#fff;font-size:.82rem;font-weight:600;padding:10px 22px;border-radius:30px;opacity:0;pointer-events:none;z-index:9999;transition:all .3s}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
+::-webkit-scrollbar-thumb{background:rgba(212,168,67,.3);border-radius:3px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <span class="nav-brand" id="nav-brand-text">✦ ĐỨC TIẾN IN ẤN</span>
+    <ul class="nav-links">
+      <li><a href="#thiep-cuoi">Thiệp Cưới</a></li>
+      <li><a href="#logo">Logo</a></li>
+      <li><a href="#phu-hieu">Phù Hiệu</a></li>
+      <li><a href="#in-pet">In PET</a></li>
+      <li><a href="#lien-he" class="nav-cta">📞 Đặt hàng</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge">✦ Uy Tín · Chất Lượng · Sáng Tạo ✦</span>
+    <h1 id="hero-title">Cơ Sở In<br><span id="hero-title-span">Đức Tiến</span></h1>
+    <div class="divider-line"></div>
+    <p class="hero-tagline" id="hero-tagline">Thiết kế tinh tế – In ấn chất lượng – Giao hàng đúng hẹn</p>
+    <div class="hero-actions">
+      <a id="cta-phone-btn" href="tel:0909000000" class="btn-gold">📞 Gọi ngay tư vấn</a>
+      <a href="#thiep-cuoi" class="btn-outline">Xem sản phẩm ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1 -->
+<section id="thiep-cuoi">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-label">💍 Danh mục 01</div>
+      <h2 class="section-title">Thiệp Cưới</h2>
+      <p class="section-desc">Thiệp cưới in offset, in kỹ thuật số cao cấp. Thiết kế theo yêu cầu – đa dạng mẫu mã, sang trọng, tinh tế.</p>
+    </div>
+    <div class="product-grid" id="grid-thiep"></div>
+  </div>
+</section>
+<div class="sep"></div>
+
+<!-- SECTION 2 -->
+<section id="logo">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-label">🏷️ Danh mục 02</div>
+      <h2 class="section-title">Logo & Nhận Diện Thương Hiệu</h2>
+      <p class="section-desc">Thiết kế logo chuyên nghiệp, danh thiếp, bộ nhận diện thương hiệu đồng bộ cho doanh nghiệp.</p>
+    </div>
+    <div class="product-grid" id="grid-logo"></div>
+  </div>
+</section>
+<div class="sep"></div>
+
+<!-- SECTION 3 -->
+<section id="phu-hieu">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-label">📛 Danh mục 03</div>
+      <h2 class="section-title">Phù Hiệu & Huy Hiệu</h2>
+      <p class="section-desc">Phù hiệu đồng phục doanh nghiệp, huy hiệu sự kiện, in thêu vi tính theo yêu cầu số lượng lớn.</p>
+    </div>
+    <div class="product-grid" id="grid-phu"></div>
+  </div>
+</section>
+<div class="sep"></div>
+
+<!-- SECTION 4 -->
+<section id="in-pet">
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-label">🐾 Danh mục 04</div>
+      <h2 class="section-title">Sản Phẩm In PET (Nhựa PET)</h2>
+      <p class="section-desc">In tem nhãn PET chống nước, in bao bì nhựa cao cấp, tem decal trong suốt – phù hợp mọi sản phẩm tiêu dùng.</p>
+    </div>
+    <div class="product-grid" id="grid-pet"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="lien-he" class="contact-section">
+  <div class="contact-inner">
+    <div class="section-label" style="justify-content:center">✦ Liên hệ</div>
+    <h2 class="contact-title">Đặt Hàng & Tư Vấn</h2>
+    <p class="contact-sub">Chúng tôi tư vấn miễn phí – Báo giá nhanh trong 30 phút</p>
+    <div class="divider-line"></div>
+    <div class="contact-grid">
+      <div class="citem"><span class="citem-icon">📞</span><div class="citem-label">Điện thoại</div><div class="citem-value"><a id="c-phone-link" href="tel:0909000000" id="c-phone-display">0909 000 000</a></div></div>
+      <div class="citem"><span class="citem-icon">📍</span><div class="citem-label">Địa chỉ</div><div class="citem-value" id="c-address">Biên Hòa, Đồng Nai</div></div>
+      <div class="citem"><span class="citem-icon">⏰</span><div class="citem-label">Giờ làm việc</div><div class="citem-value" id="c-hours">7:00 – 20:00 · Thứ 2 – CN</div></div>
+      <div class="citem"><span class="citem-icon">💬</span><div class="citem-label">Zalo / Nhắn tin</div><div class="citem-value"><a id="c-zalo-link" href="https://zalo.me/0909000000" target="_blank">Nhắn Zalo ngay</a></div></div>
+    </div>
+    <div class="contact-btns">
+      <a id="c-zalo-btn" href="https://zalo.me/0909000000" target="_blank" class="btn-zalo">💬 Chat Zalo</a>
+      <a id="c-fb-btn" href="https://facebook.com" target="_blank" class="btn-fb">👍 Facebook</a>
+      <a id="c-phone-btn2" href="tel:0909000000" class="btn-gold">📞 Gọi ngay</a>
+    </div>
+    <p class="footer-copy" id="c-footer">© 2025 Cơ Sở In Đức Tiến · Biên Hòa, Đồng Nai · Thiết kế & In ấn chuyên nghiệp</p>
+  </div>
+</section>
+
+<!-- FLOAT ZALO -->
+<a id="float-zalo-link" href="https://zalo.me/0909000000" target="_blank" class="float-zalo">
+  <span class="float-tip">Chat Zalo ngay!</span>
+  <svg viewBox="0 0 48 48"><path d="M24 4C13 4 4 12.1 4 22c0 5.8 3 10.9 7.8 14.3l-1.5 7.2 7.8-4.1C20 39.8 22 40 24 40c11 0 20-8.1 20-18S35 4 24 4zm-7 23l4.5-4.7L26 26.4l5.5-4.4-9.5 10-4.3-4.3L12.5 32l-4.5-5z"/></svg>
+</a>
+
+<!-- ADMIN TOGGLE -->
+<button id="admin-toggle" title="Quản lý nội dung" onclick="toggleAdmin()">
+  <svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 018.5 12 3.5 3.5 0 0112 8.5a3.5 3.5 0 013.5 3.5 3.5 3.5 0 01-3.5 3.5m7.43-2.92c.04-.36.07-.72.07-1.08 0-.36-.03-.73-.07-1.08l2.24-1.76c.2-.16.26-.43.12-.65l-2.12-3.68c-.14-.22-.41-.3-.63-.22l-2.65 1.07c-.54-.42-1.12-.77-1.76-1.02l-.4-2.82C14.21 3.18 13.92 3 13.6 3h-4.2c-.32 0-.61.18-.64.48l-.4 2.82a8.1 8.1 0 00-1.76 1.02L3.95 6.25c-.23-.08-.49 0-.63.22L1.2 10.15c-.14.22-.08.49.12.65l2.24 1.76c-.04.35-.07.72-.07 1.08s.03.73.07 1.08L1.32 16.48c-.2.16-.26.43-.12.65l2.12 3.68c.14.22.4.3.63.22l2.65-1.07c.54.42 1.12.77 1.76 1.02l.4 2.82c.03.3.32.48.64.48h4.2c.32 0 .61-.18.64-.48l.4-2.82a8.1 8.1 0 001.76-1.02l2.65 1.07c.23.08.49 0 .63-.22l2.12-3.68c.14-.22.08-.49-.12-.65l-2.24-1.76z"/></svg>
+</button>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-btn lb-prev" onclick="lbNav(-1)">&#8592;</button>
+  <div class="lb-img-wrap">
+    <img id="lb-img" src="" alt="">
+    <div class="lb-caption" id="lb-caption"></div>
+  </div>
+  <button class="lb-btn lb-next" onclick="lbNav(1)">&#8594;</button>
+  <button class="lb-btn lb-close" onclick="closeLightbox()">&#10005;</button>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-panel">
+  <div class="admin-topbar">
+    <h2>⚙️ Quản Lý Nội Dung</h2>
+    <div class="admin-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-info')">🏠 Thông tin</button>
+      <button class="tab-btn" onclick="switchTab('tab-images')">🖼️ Hình ảnh</button>
+      <button class="tab-btn" onclick="switchTab('tab-contact')">📞 Liên hệ</button>
+      <button class="tab-btn" onclick="switchTab('tab-help')">❓ Hướng dẫn</button>
+    </div>
+    <button class="admin-close" onclick="toggleAdmin()">✕</button>
+  </div>
+
+  <div class="admin-body">
+
+    <!-- TAB: THÔNG TIN -->
+    <div class="tab-content active" id="tab-info">
+      <div class="info-box">✏️ Chỉnh sửa tên cơ sở, tagline và nút kêu gọi hành động hiển thị trên trang chủ.</div>
+      <div class="form-group">
+        <label class="form-label">Tên cơ sở (dòng chính)</label>
+        <input class="form-input" id="f-name1" placeholder="Ví dụ: Cơ Sở In" value="Cơ Sở In">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tên nổi bật (màu vàng)</label>
+        <input class="form-input" id="f-name2" placeholder="Ví dụ: Đức Tiến" value="Đức Tiến">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tagline / Slogan</label>
+        <input class="form-input" id="f-tagline" value="Thiết kế tinh tế – In ấn chất lượng – Giao hàng đúng hẹn">
+      </div>
+      <button class="save-btn" onclick="saveInfo()">💾 Lưu thông tin</button>
+    </div>
+
+    <!-- TAB: HÌNH ẢNH -->
+    <div class="tab-content" id="tab-images">
+      <div class="info-box">
+        <strong>Cách thêm ảnh sản phẩm:</strong><br>
+        • <strong>Cách 1 – Tải ảnh từ máy:</strong> Bấm vùng "📁 Chọn ảnh" → chọn file ảnh từ điện thoại/máy tính<br>
+        • <strong>Cách 2 – Dán link ảnh:</strong> Copy link ảnh (Facebook, Google Drive…) → dán vào ô "Link ảnh" → bấm "Dùng"<br>
+        • Bấm "✕ Xóa ảnh" để xóa và để trống ô đó
+      </div>
+      <div class="cat-tabs">
+        <button class="cat-tab active" onclick="switchCat('thiep')">💍 Thiệp Cưới</button>
+        <button class="cat-tab" onclick="switchCat('logo')">🏷️ Logo</button>
+        <button class="cat-tab" onclick="switchCat('phu')">📛 Phù Hiệu</button>
+        <button class="cat-tab" onclick="switchCat('pet')">🐾 In PET</button>
+      </div>
+      <div class="img-manager-grid" id="img-manager-grid"></div>
+    </div>
+
+    <!-- TAB: LIÊN HỆ -->
+    <div class="tab-content" id="tab-contact">
+      <div class="info-box">📞 Cập nhật số điện thoại, Zalo, Facebook và địa chỉ. Sau khi lưu, tất cả nút bấm trên trang sẽ tự động cập nhật.</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Số điện thoại</label>
+          <input class="form-input" id="f-phone" placeholder="0909 000 000" value="0909 000 000">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Số Zalo (để nhắn tin)</label>
+          <input class="form-input" id="f-zalo" placeholder="0909000000" value="0909000000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Link Facebook Page</label>
+        <input class="form-input" id="f-fb" placeholder="https://facebook.com/trang-cua-ban" value="https://facebook.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Địa chỉ</label>
+        <input class="form-input" id="f-address" value="Biên Hòa, Đồng Nai">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Giờ làm việc</label>
+        <input class="form-input" id="f-hours" value="7:00 – 20:00 · Thứ 2 – CN">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Dòng footer (bản quyền)</label>
+        <input class="form-input" id="f-footer" value="© 2025 Cơ Sở In Đức Tiến · Biên Hòa, Đồng Nai · Thiết kế & In ấn chuyên nghiệp">
+      </div>
+      <button class="save-btn" onclick="saveContact()">💾 Lưu thông tin liên hệ</button>
+    </div>
+
+    <!-- TAB: HƯỚNG DẪN -->
+    <div class="tab-content" id="tab-help">
+      <div class="info-box" style="line-height:2">
+        <strong style="font-size:.95rem;display:block;margin-bottom:10px">📖 Hướng dẫn sử dụng trang web</strong>
+        <strong>1. Mở trang quản lý:</strong> Bấm nút ⚙️ góc dưới trái màn hình<br>
+        <strong>2. Thêm ảnh sản phẩm:</strong> Vào tab "🖼️ Hình ảnh" → chọn danh mục → tải ảnh lên hoặc dán link<br>
+        <strong>3. Cập nhật liên hệ:</strong> Vào tab "📞 Liên hệ" → nhập SĐT, Zalo, Facebook mới → Lưu<br>
+        <strong>4. Lưu dữ liệu:</strong> Dữ liệu được lưu trong trình duyệt. <em>Không xóa cache trình duyệt</em> để giữ ảnh.<br>
+        <strong>5. Chia sẻ lên Facebook:</strong> Đăng file HTML lên Netlify (miễn phí) → copy link → đăng Facebook<br><br>
+        <strong style="color:#fca5a5">⚠️ Lưu ý:</strong> Nếu dùng ảnh từ máy tính, ảnh được lưu trong trình duyệt này. Để chia sẻ cho người khác xem ảnh, hãy dùng <em>link ảnh từ internet</em> (Google Drive, Imgur, Facebook…) thay vì tải từ máy.<br><br>
+        <strong>📤 Cách lấy link ảnh từ Facebook:</strong><br>
+        Đăng ảnh lên Facebook → mở ảnh → chuột phải → "Sao chép địa chỉ hình ảnh" → dán vào ô Link ảnh
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ Đã lưu thành công!</div>
+
+<script>
+// ════════════════════════════════════════
+// DATA STORE
+// ════════════════════════════════════════
+const defaultImages = {
+  thiep:[
+    {name:'Mẫu Thiệp 01',sub:'In offset · Nền kem · Bo góc',src:'https://picsum.photos/seed/wedding1/480/360'},
+    {name:'Mẫu Thiệp 02',sub:'In kỹ thuật số · Nhũ vàng',src:'https://picsum.photos/seed/wedding2/480/360'},
+    {name:'Mẫu Thiệp 03',sub:'Phong cách hiện đại · Pastel',src:'https://picsum.photos/seed/wedding3/480/360'},
+    {name:'Mẫu Thiệp 04',sub:'Cổ điển · Hoa văn',src:'https://picsum.photos/seed/wedding4/480/360'},
+    {name:'Mẫu Thiệp 05',sub:'Thiết kế theo yêu cầu',src:'https://picsum.photos/seed/wedding5/480/360'},
+    {name:'Mẫu Thiệp 06',sub:'Sang trọng · Giấy cao cấp',src:'https://picsum.photos/seed/wedding6/480/360'},
+  ],
+  logo:[
+    {name:'Logo Doanh Nghiệp 01',sub:'Tối giản · Hiện đại',src:'https://picsum.photos/seed/logo1/480/360'},
+    {name:'Logo Thương Hiệu 02',sub:'Màu sắc nổi bật',src:'https://picsum.photos/seed/logo2/480/360'},
+    {name:'Danh Thiếp Cao Cấp',sub:'In 2 mặt · Cán mờ · UV',src:'https://picsum.photos/seed/logo3/480/360'},
+    {name:'Bộ Nhận Diện 04',sub:'Đồng bộ màu & font',src:'https://picsum.photos/seed/logo4/480/360'},
+    {name:'Logo Cửa Hàng 05',sub:'Phong cách truyền thống',src:'https://picsum.photos/seed/logo5/480/360'},
+    {name:'Thương Hiệu Premium 06',sub:'Theo đơn hàng',src:'https://picsum.photos/seed/logo6/480/360'},
+  ],
+  phu:[
+    {name:'Phù Hiệu Đồng Phục 01',sub:'In nhiệt · Bền màu',src:'https://picsum.photos/seed/badge1/480/360'},
+    {name:'Huy Hiệu Sự Kiện 02',sub:'Kim loại · Cài áo',src:'https://picsum.photos/seed/badge2/480/360'},
+    {name:'Thêu Vi Tính 03',sub:'Logo · Mũ · Áo đồng phục',src:'https://picsum.photos/seed/badge3/480/360'},
+    {name:'Phù Hiệu Trường 04',sub:'Học sinh · Giáo viên',src:'https://picsum.photos/seed/badge4/480/360'},
+    {name:'Bảng Tên Nhân Viên 05',sub:'Mica · UV · Dây đeo',src:'https://picsum.photos/seed/badge5/480/360'},
+    {name:'Huy Hiệu Đặc Biệt 06',sub:'Số lượng lớn · Giá tốt',src:'https://picsum.photos/seed/badge6/480/360'},
+  ],
+  pet:[
+    {name:'Tem Nhãn PET 01',sub:'Chống nước · Bền màu',src:'https://picsum.photos/seed/pet1/480/360'},
+    {name:'Decal Trong Suốt 02',sub:'In UV · Logo thương hiệu',src:'https://picsum.photos/seed/pet2/480/360'},
+    {name:'Bao Bì Nhựa 03',sub:'In 4 màu · Cán bóng',src:'https://picsum.photos/seed/pet3/480/360'},
+    {name:'Tem Decal Màu 04',sub:'Cắt bế tùy chỉnh',src:'https://picsum.photos/seed/pet4/480/360'},
+    {name:'Nhãn Sản Phẩm 05',sub:'Thực phẩm · Mỹ phẩm',src:'https://picsum.photos/seed/pet5/480/360'},
+    {name:'Tem Chống Giả 06',sub:'Hologram · QR Code',src:'https://picsum.photos/seed/pet6/480/360'},
+  ]
+};
+
+function loadData(){
+  try{return JSON.parse(localStorage.getItem('dtData'))||{}}catch(e){return{}}
+}
+function saveData(d){localStorage.setItem('dtData',JSON.stringify(d))}
+
+let appData = loadData();
+function get(key,def){return appData[key]!==undefined?appData[key]:def}
+
+// ════════════════════════════════════════
+// RENDER CATALOG
+// ════════════════════════════════════════
+const catLabels={thiep:'Thiệp Cưới',logo:'Logo',phu:'Phù Hiệu',pet:'In PET'};
+const catEmoji={thiep:'💍',logo:'🏷️',phu:'📛',pet:'🐾'};
+
+function renderCatalog(){
+  ['thiep','logo','phu','pet'].forEach(cat=>{
+    const grid=document.getElementById('grid-'+cat);
+    const imgs=get('imgs_'+cat, defaultImages[cat]);
+    grid.innerHTML='';
+    imgs.forEach((item,i)=>{
+      const card=document.createElement('div');
+      card.className='product-card';
+      if(item.src){
+        card.onclick=()=>openLightbox(cat,i);
+        card.innerHTML=`
+          <div class="card-img-wrap">
+            <img src="${item.src}" alt="${item.name}" loading="lazy">
+            <span class="card-badge">${catEmoji[cat]} ${catLabels[cat]}</span>
+            <div class="card-overlay"><span class="overlay-text">Xem ảnh</span></div>
+          </div>
+          <div class="card-body"><div class="card-name">${item.name}</div><div class="card-sub">${item.sub||''}</div></div>`;
+      } else {
+        card.innerHTML=`
+          <div class="card-img-wrap empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Chưa có ảnh</span>
+          </div>
+          <div class="card-body"><div class="card-name">${item.name}</div><div class="card-sub">${item.sub||''}</div></div>`;
+      }
+      grid.appendChild(card);
+    });
+  });
+}
+
+// ════════════════════════════════════════
+// LIGHTBOX
+// ════════════════════════════════════════
+let lbCat='', lbIdx=0;
+function openLightbox(cat,i){
+  lbCat=cat; lbIdx=i;
+  updateLb();
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+function lbNav(d){
+  const imgs=get('imgs_'+lbCat,defaultImages[lbCat]).filter(x=>x.src);
+  if(!imgs.length)return;
+  const filled=get('imgs_'+lbCat,defaultImages[lbCat]);
+  let count=0;
+  lbIdx=(lbIdx+d+filled.length)%filled.length;
+  while(!filled[lbIdx].src&&count<filled.length){lbIdx=(lbIdx+d+filled.length)%filled.length;count++;}
+  updateLb();
+}
+function updateLb(){
+  const item=get('imgs_'+lbCat,defaultImages[lbCat])[lbIdx];
+  if(!item||!item.src)return;
+  document.getElementById('lb-img').src=item.src;
+  document.getElementById('lb-img').alt=item.name;
+  document.getElementById('lb-caption').textContent=item.name+(item.sub?' · '+item.sub:'');
+}
+document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox()});
+document.addEventListener('keydown',function(e){
+  const lb=document.getElementById('lightbox');
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')closeLightbox();
+  if(e.key==='ArrowLeft')lbNav(-1);
+  if(e.key==='ArrowRight')lbNav(1);
+});
+
+// ════════════════════════════════════════
+// APPLY CONTACT / INFO
+// ════════════════════════════════════════
+function applyAll(){
+  const phone=get('phone','0909 000 000');
+  const phoneRaw=phone.replace(/\s/g,'');
+  const zalo=get('zalo','0909000000');
+  const fb=get('fb','https://facebook.com');
+  document.getElementById('cta-phone-btn').href='tel:'+phoneRaw;
+  document.getElementById('c-phone-link').href='tel:'+phoneRaw;
+  document.getElementById('c-phone-link').textContent=phone;
+  document.getElementById('c-address').textContent=get('address','Biên Hòa, Đồng Nai');
+  document.getElementById('c-hours').textContent=get('hours','7:00 – 20:00 · Thứ 2 – CN');
+  document.getElementById('c-zalo-link').href='https://zalo.me/'+zalo;
+  document.getElementById('c-zalo-btn').href='https://zalo.me/'+zalo;
+  document.getElementById('c-fb-btn').href=fb;
+  document.getElementById('c-phone-btn2').href='tel:'+phoneRaw;
+  document.getElementById('float-zalo-link').href='https://zalo.me/'+zalo;
+  document.getElementById('c-footer').textContent=get('footer','© 2025 Cơ Sở In Đức Tiến · Biên Hòa, Đồng Nai · Thiết kế & In ấn chuyên nghiệp');
+  const n1=get('name1','Cơ Sở In'), n2=get('name2','Đức Tiến');
+  document.getElementById('hero-title').innerHTML=n1+'<br><span id="hero-title-span">'+n2+'</span>';
+  document.getElementById('hero-tagline').textContent=get('tagline','Thiết kế tinh tế – In ấn chất lượng – Giao hàng đúng hẹn');
+  document.getElementById('nav-brand-text').textContent='✦ '+n2.toUpperCase()+' IN ẤN';
+}
+
+// ════════════════════════════════════════
+// ADMIN PANEL
+// ════════════════════════════════════════
+function toggleAdmin(){
+  const p=document.getElementById('admin-panel');
+  if(!p.classList.contains('open')){
+    const pw=prompt('🔐 Nhập mật khẩu:');
+    if(pw!=='ductien2025'){alert('❌ Sai mật khẩu!');return;}
+  }
+  p.classList.toggle('open');
+  if(p.classList.contains('open')){
+    document.getElementById('f-phone').value=get('phone','0909 000 000');
+    document.getElementById('f-zalo').value=get('zalo','0909000000');
+    document.getElementById('f-fb').value=get('fb','https://facebook.com');
+    document.getElementById('f-address').value=get('address','Biên Hòa, Đồng Nai');
+    document.getElementById('f-hours').value=get('hours','7:00 – 20:00 · Thứ 2 – CN');
+    document.getElementById('f-footer').value=get('footer','© 2025 Cơ Sở In Đức Tiến · Biên Hòa, Đồng Nai · Thiết kế & In ấn chuyên nghiệp');
+    document.getElementById('f-name1').value=get('name1','Cơ Sở In');
+    document.getElementById('f-name2').value=get('name2','Đức Tiến');
+    document.getElementById('f-tagline').value=get('tagline','Thiết kế tinh tế – In ấn chất lượng – Giao hàng đúng hẹn');
+    renderImgManager('thiep');
+  }
+}
+
+function switchTab(id){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg||'✅ Đã lưu thành công!';
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2500);
+}
+
+function saveInfo(){
+  appData.name1=document.getElementById('f-name1').value;
+  appData.name2=document.getElementById('f-name2').value;
+  appData.tagline=document.getElementById('f-tagline').value;
+  saveData(appData);
+  applyAll();
+  showToast('✅ Đã lưu thông tin trang chủ!');
+}
+
+function saveContact(){
+  appData.phone=document.getElementById('f-phone').value;
+  appData.zalo=document.getElementById('f-zalo').value;
+  appData.fb=document.getElementById('f-fb').value;
+  appData.address=document.getElementById('f-address').value;
+  appData.hours=document.getElementById('f-hours').value;
+  appData.footer=document.getElementById('f-footer').value;
+  saveData(appData);
+  applyAll();
+  showToast('✅ Đã lưu thông tin liên hệ!');
+}
+
+// ════════════════════════════════════════
+// IMAGE MANAGER
+// ════════════════════════════════════════
+let currentCat='thiep';
+function switchCat(cat){
+  currentCat=cat;
+  document.querySelectorAll('.cat-tab').forEach(t=>t.classList.remove('active'));
+  event.target.classList.add('active');
+  renderImgManager(cat);
+}
+
+function renderImgManager(cat){
+  currentCat=cat;
+  const grid=document.getElementById('img-manager-grid');
+  const imgs=get('imgs_'+cat, JSON.parse(JSON.stringify(defaultImages[cat])));
+  grid.innerHTML='';
+  imgs.forEach((item,i)=>{
+    const slot=document.createElement('div');
+    slot.className='img-slot';
+    slot.innerHTML=`
+      <div class="img-slot-preview ${item.src?'':'empty'}" id="prev-${cat}-${i}">
+        ${item.src
+          ? `<img src="${item.src}" alt="${item.name}">`
+          : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Chưa có ảnh</span>`
+        }
+      </div>
+      <div class="img-slot-body">
+        <div class="img-slot-name">${item.name}</div>
+        <div class="img-slot-sub">${item.sub||''}</div>
+        <div class="upload-area">
+          <div class="upload-area-text">📁 Chọn ảnh từ máy</div>
+          <input type="file" accept="image/*" onchange="handleFileUpload(event,'${cat}',${i})">
+        </div>
+        <div class="upload-url-row">
+          <input type="text" placeholder="Hoặc dán link ảnh…" id="url-${cat}-${i}">
+          <button onclick="handleUrlImg('${cat}',${i})">Dùng</button>
+        </div>
+        ${item.src?`<button class="clear-img-btn" onclick="clearImg('${cat}',${i})">✕ Xóa ảnh</button>`:''}
+      </div>`;
+    grid.appendChild(slot);
+  });
+}
+
+function handleFileUpload(e,cat,i){
+  const file=e.target.files[0];
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=function(ev){
+    setImg(cat,i,ev.target.result);
+  };
+  reader.readAsDataURL(file);
+}
+
+function handleUrlImg(cat,i){
+  const url=document.getElementById('url-'+cat+'-'+i).value.trim();
+  if(!url){showToast('⚠️ Vui lòng nhập link ảnh!');return;}
+  setImg(cat,i,url);
+}
+
+function setImg(cat,i,src){
+  let imgs=get('imgs_'+cat, JSON.parse(JSON.stringify(defaultImages[cat])));
+  imgs[i].src=src;
+  appData['imgs_'+cat]=imgs;
+  saveData(appData);
+  renderCatalog();
+  renderImgManager(cat);
+  showToast('✅ Đã cập nhật ảnh '+imgs[i].name+'!');
+}
+
+function clearImg(cat,i){
+  let imgs=get('imgs_'+cat, JSON.parse(JSON.stringify(defaultImages[cat])));
+  imgs[i].src='';
+  appData['imgs_'+cat]=imgs;
+  saveData(appData);
+  renderCatalog();
+  renderImgManager(cat);
+  showToast('🗑️ Đã xóa ảnh!');
+}
+
+// ════════════════════════════════════════
+// SCROLL REVEAL
+// ════════════════════════════════════════
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:0.07});
+document.querySelectorAll('.section-wrap').forEach(el=>obs.observe(el));
+
+// ════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════
+renderCatalog();
+applyAll();
+</script>
+</body>
+</html>
